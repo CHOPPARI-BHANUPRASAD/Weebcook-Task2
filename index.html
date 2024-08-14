@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>To-Do List</h1>
+        <div class="todo-form">
+            <input type="text" id="task-input" placeholder="Enter a new task">
+            <input type="datetime-local" id="task-time-input">
+            <button id="add-task-button">Add Task</button>
+        </div>
+        <div class="filters">
+            <button id="all-tasks-button">All</button>
+            <button id="pending-tasks-button">Pending</button>
+            <button id="completed-tasks-button">Completed</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+    <audio id="alarm-sound" src="sound.wav" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

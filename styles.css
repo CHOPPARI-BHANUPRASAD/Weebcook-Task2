@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(110deg,#000000,#b700ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+body:hover{
+    background: linear-gradient(45deg,#00ffae,#99ff00);
+}
+
+.todo-container {
+    background:linear-gradient(90deg,#28a745,#007bff);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+.todo-container:hover{
+    background: linear-gradient(67deg,#dc3545,#ffc107);
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.todo-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#task-input:hover{
+    background: linear-gradient(80deg,#07e4ca,#866063);
+}
+#task-input {
+    width: 75%;
+    padding: 10px;
+    border: 3px solid #090606;
+    border-radius: 4px;
+    color: #000000;
+}
+#task-time-input{
+    margin-left: 10px;
+    border: 3px solid #090606;
+}
+#task-time-input:hover{
+    background: linear-gradient(90deg,#007bff,#99ff00);
+}
+
+#add-task-button {
+    width: 20%;
+    padding: 10px;
+    background-color: #fff200ae;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    border: 3px solid #090606;
+}
+#add-task-button:hover{
+    background: linear-gradient(90deg,#49430a,#0033ff);
+
+}
+.filters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.filters button:hover{
+    background: linear-gradient(55deg,#bd39bd,#500edf);
+
+}
+#all-tasks-button {
+    background-color: #6c757d;
+    color: white;
+    border: 3px solid #090606;
+}
+
+#pending-tasks-button {
+    background-color: #ffc107;
+    color: white;
+    border: 3px solid #090606;
+}
+
+#completed-tasks-button {
+    background-color: #28a745;
+    color: white;
+    border: 3px solid #090606;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-actions {
+    display: flex;
+}
+
+.task-actions button {
+    background-color: #dc3545;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.task-actions button.edit-btn {
+    background-color: #ffc107;
+}
